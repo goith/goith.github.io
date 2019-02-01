@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="语法 FROM  语法：FROM [:] 解释：设置要制作的镜像基于哪个镜像，FROM指令必须是整个Dockerfile的第一个指令，如果指定的镜像不存在默认会自动从Docker Hub上下载。   MAINTAINER  语法：MAINTAINER  解释：MAINTAINER指令允许你给将要制作的镜像设置作者信息   RUN  语法：  RUN         #将会调用/bin/sh -c">
+<meta name="description" content="语法 FROM  语法：FROM &amp;lt;镜像&amp;gt;[:&amp;lt;版本&amp;gt;] 解释：设置要制作的镜像基于哪个镜像，FROM指令必须是整个Dockerfile的第一个指令，如果指定的镜像不存在默认会自动从Docker Hub上下载。   MAINTAINER  语法：MAINTAINER  解释：MAINTAINER指令允许你给将要制作的镜像设置作者信息   RUN  语法：  RUN">
 <meta name="keywords" content="Docker Dockerfile">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Dockerfile文件详解">
 <meta property="og:url" content="https://mysite.com/2019/01/25/Dockerfile文件详解/index.html">
 <meta property="og:site_name" content="Goith&#39;s Blog">
-<meta property="og:description" content="语法 FROM  语法：FROM [:] 解释：设置要制作的镜像基于哪个镜像，FROM指令必须是整个Dockerfile的第一个指令，如果指定的镜像不存在默认会自动从Docker Hub上下载。   MAINTAINER  语法：MAINTAINER  解释：MAINTAINER指令允许你给将要制作的镜像设置作者信息   RUN  语法：  RUN         #将会调用/bin/sh -c">
+<meta property="og:description" content="语法 FROM  语法：FROM &amp;lt;镜像&amp;gt;[:&amp;lt;版本&amp;gt;] 解释：设置要制作的镜像基于哪个镜像，FROM指令必须是整个Dockerfile的第一个指令，如果指定的镜像不存在默认会自动从Docker Hub上下载。   MAINTAINER  语法：MAINTAINER  解释：MAINTAINER指令允许你给将要制作的镜像设置作者信息   RUN  语法：  RUN">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-02-01T02:25:18.265Z">
+<meta property="og:updated_time" content="2019-02-01T02:29:22.335Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Dockerfile文件详解">
-<meta name="twitter:description" content="语法 FROM  语法：FROM [:] 解释：设置要制作的镜像基于哪个镜像，FROM指令必须是整个Dockerfile的第一个指令，如果指定的镜像不存在默认会自动从Docker Hub上下载。   MAINTAINER  语法：MAINTAINER  解释：MAINTAINER指令允许你给将要制作的镜像设置作者信息   RUN  语法：  RUN         #将会调用/bin/sh -c">
+<meta name="twitter:description" content="语法 FROM  语法：FROM &amp;lt;镜像&amp;gt;[:&amp;lt;版本&amp;gt;] 解释：设置要制作的镜像基于哪个镜像，FROM指令必须是整个Dockerfile的第一个指令，如果指定的镜像不存在默认会自动从Docker Hub上下载。   MAINTAINER  语法：MAINTAINER  解释：MAINTAINER指令允许你给将要制作的镜像设置作者信息   RUN  语法：  RUN">
 
 
 
@@ -303,7 +303,7 @@
         <h2 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h2><ul>
 <li><p>FROM</p>
 <ul>
-<li>语法：FROM <image>[:<tag>]</tag></image></li>
+<li>语法：FROM &lt;镜像&gt;[:&lt;版本&gt;]</li>
 <li>解释：设置要制作的镜像基于哪个镜像，FROM指令必须是整个Dockerfile的第一个指令，如果指定的镜像不存在默认会自动从Docker Hub上下载。</li>
 </ul>
 </li>
