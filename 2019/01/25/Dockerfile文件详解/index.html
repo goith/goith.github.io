@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="123456789101112131415161718192021222324# Use an official Python runtime as a parent imageFROM python:2.7-slim# Set the working directory to /appWORKDIR /app# Copy the current directory contents into t">
+<meta name="description" content="语法 FROM  语法：FROM [:] 解释：设置要制作的镜像基于哪个镜像，FROM指令必须是整个Dockerfile的第一个指令，如果指定的镜像不存在默认会自动从Docker Hub上下载。   MAINTAINER  语法：MAINTAINER  解释：MAINTAINER指令允许你给将要制作的镜像设置作者信息   RUN  语法：  RUN         #将会调用/bin/sh -c">
 <meta name="keywords" content="Docker Dockerfile">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Dockerfile文件详解">
 <meta property="og:url" content="https://mysite.com/2019/01/25/Dockerfile文件详解/index.html">
 <meta property="og:site_name" content="Goith&#39;s Blog">
-<meta property="og:description" content="123456789101112131415161718192021222324# Use an official Python runtime as a parent imageFROM python:2.7-slim# Set the working directory to /appWORKDIR /app# Copy the current directory contents into t">
+<meta property="og:description" content="语法 FROM  语法：FROM [:] 解释：设置要制作的镜像基于哪个镜像，FROM指令必须是整个Dockerfile的第一个指令，如果指定的镜像不存在默认会自动从Docker Hub上下载。   MAINTAINER  语法：MAINTAINER  解释：MAINTAINER指令允许你给将要制作的镜像设置作者信息   RUN  语法：  RUN         #将会调用/bin/sh -c">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-01-25T12:15:45.747Z">
+<meta property="og:updated_time" content="2019-02-01T02:25:18.265Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Dockerfile文件详解">
-<meta name="twitter:description" content="123456789101112131415161718192021222324# Use an official Python runtime as a parent imageFROM python:2.7-slim# Set the working directory to /appWORKDIR /app# Copy the current directory contents into t">
+<meta name="twitter:description" content="语法 FROM  语法：FROM [:] 解释：设置要制作的镜像基于哪个镜像，FROM指令必须是整个Dockerfile的第一个指令，如果指定的镜像不存在默认会自动从Docker Hub上下载。   MAINTAINER  语法：MAINTAINER  解释：MAINTAINER指令允许你给将要制作的镜像设置作者信息   RUN  语法：  RUN         #将会调用/bin/sh -c">
 
 
 
@@ -300,8 +300,7 @@
       
 
       
-        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"># Use an official Python runtime as a parent image</span><br><span class="line">FROM python:2.7-slim</span><br><span class="line"></span><br><span class="line"># Set the working directory to /app</span><br><span class="line">WORKDIR /app</span><br><span class="line"></span><br><span class="line"># Copy the current directory contents into the container at /app</span><br><span class="line">ADD . /app</span><br><span class="line"></span><br><span class="line"># Install any needed packages specified in requirements.txt</span><br><span class="line">RUN pip install --trusted-host pypi.python.org -r requirements.txt</span><br><span class="line"></span><br><span class="line"># Make port 80 available to the world outside this container</span><br><span class="line">EXPOSE 80</span><br><span class="line"></span><br><span class="line"># Define environment variable</span><br><span class="line">ENV NAME World</span><br><span class="line"></span><br><span class="line"># Run app.py when the container launches</span><br><span class="line">CMD [&quot;python&quot;, &quot;app.py&quot;]</span><br><span class="line"></span><br><span class="line"># Set proxy server, replace host:port with values for your servers</span><br><span class="line">ENV http_proxy host:port</span><br><span class="line">ENV https_proxy host:port</span><br></pre></td></tr></table></figure>
-<ul>
+        <h2 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h2><ul>
 <li><p>FROM</p>
 <ul>
 <li>语法：FROM <image>[:<tag>]</tag></image></li>
@@ -433,6 +432,7 @@
 <li>/bin/bash -c “export DOCKER_HOST=tcp://localhost:port”</li>
 <li>echo ‘export DOCKER_HOST=tcp://localhost:port’ &gt;&gt; ~/.bashrc</li>
 </ul>
+<h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"># Use an official Python runtime as a parent image</span><br><span class="line">FROM python:2.7-slim</span><br><span class="line"></span><br><span class="line"># Set the working directory to /app</span><br><span class="line">WORKDIR /app</span><br><span class="line"></span><br><span class="line"># Copy the current directory contents into the container at /app</span><br><span class="line">ADD . /app</span><br><span class="line"></span><br><span class="line"># Install any needed packages specified in requirements.txt</span><br><span class="line">RUN pip install --trusted-host pypi.python.org -r requirements.txt</span><br><span class="line"></span><br><span class="line"># Make port 80 available to the world outside this container</span><br><span class="line">EXPOSE 80</span><br><span class="line"></span><br><span class="line"># Define environment variable</span><br><span class="line">ENV NAME World</span><br><span class="line"></span><br><span class="line"># Run app.py when the container launches</span><br><span class="line">CMD [&quot;python&quot;, &quot;app.py&quot;]</span><br><span class="line"></span><br><span class="line"># Set proxy server, replace host:port with values for your servers</span><br><span class="line">ENV http_proxy host:port</span><br><span class="line">ENV https_proxy host:port</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -523,8 +523,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -593,6 +602,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#语法"><span class="nav-number">1.</span> <span class="nav-text">语法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#示例"><span class="nav-number">2.</span> <span class="nav-text">示例</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
