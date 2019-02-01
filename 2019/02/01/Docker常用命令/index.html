@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="Docker,">
 
 
 
@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
-<meta name="keywords" content="Golang Docker Kubernetes">
+<meta name="description" content="镜像操作1234567891011# 构建镜像docker build -t helloword .# 拉取镜像docker pull docker-reg.sogou-inc.com/gaozhenan/go-demo:latest# 查看镜像列表docker image list# 删除镜像docker rmi  helloworld:0.1 容器操作123456789101112131415">
+<meta name="keywords" content="Docker">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="https://mysite.com/2019/01/25/hello-world/index.html">
+<meta property="og:title" content="Docker常用命令">
+<meta property="og:url" content="https://mysite.com/2019/02/01/Docker常用命令/index.html">
 <meta property="og:site_name" content="Goith&#39;s Blog">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="镜像操作1234567891011# 构建镜像docker build -t helloword .# 拉取镜像docker pull docker-reg.sogou-inc.com/gaozhenan/go-demo:latest# 查看镜像列表docker image list# 删除镜像docker rmi  helloworld:0.1 容器操作123456789101112131415">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-01-25T11:11:41.818Z">
+<meta property="og:updated_time" content="2019-02-01T02:41:15.854Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="Docker常用命令">
+<meta name="twitter:description" content="镜像操作1234567891011# 构建镜像docker build -t helloword .# 拉取镜像docker pull docker-reg.sogou-inc.com/gaozhenan/go-demo:latest# 查看镜像列表docker image list# 删除镜像docker rmi  helloworld:0.1 容器操作123456789101112131415">
 
 
 
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="https://mysite.com/2019/01/25/hello-world/">
+  <link rel="canonical" href="https://mysite.com/2019/02/01/Docker常用命令/">
 
 
 
 
 
-  <title>Hello World | Goith's Blog</title>
+  <title>Docker常用命令 | Goith's Blog</title>
   
 
 
@@ -233,7 +233,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://mysite.com/2019/01/25/hello-world/">
+    <link itemprop="mainEntityOfPage" href="https://mysite.com/2019/02/01/Docker常用命令/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Goith">
@@ -250,7 +250,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World</h1>
+          <h1 class="post-title" itemprop="name headline">Docker常用命令</h1>
         
 
         <div class="post-meta">
@@ -262,8 +262,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-01-25T19:11:41+08:00">
-                2019-01-25
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-02-01T10:40:42+08:00">
+                2019-02-01
               </time>
             
 
@@ -300,15 +300,9 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <h2 id="镜像操作"><a href="#镜像操作" class="headerlink" title="镜像操作"></a>镜像操作</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"># 构建镜像</span><br><span class="line">docker build -t helloword .</span><br><span class="line"></span><br><span class="line"># 拉取镜像</span><br><span class="line">docker pull docker-reg.sogou-inc.com/gaozhenan/go-demo:latest</span><br><span class="line"></span><br><span class="line"># 查看镜像列表</span><br><span class="line">docker image list</span><br><span class="line"></span><br><span class="line"># 删除镜像</span><br><span class="line">docker rmi  helloworld:0.1</span><br></pre></td></tr></table></figure>
+<h2 id="容器操作"><a href="#容器操作" class="headerlink" title="容器操作"></a>容器操作</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"># 启动方式：</span><br><span class="line"># host_port:containter_port</span><br><span class="line">docker run -p 9000:9000 --name  myphp-fpm -d docker-reg.sogou-inc.com/library/demo-php</span><br><span class="line">docker run -p 9000:9000 -d expression   #本地镜像</span><br><span class="line"></span><br><span class="line"># daemon 启动</span><br><span class="line">docker run -d -p 8082:8080 api-android        </span><br><span class="line"></span><br><span class="line"># 查看当前运行列表</span><br><span class="line">docker ps </span><br><span class="line"></span><br><span class="line"># 查看log </span><br><span class="line">docker logs -f containerid</span><br><span class="line"></span><br><span class="line"># 查看容器信息:ip,port 等</span><br><span class="line">docker inspect containerid</span><br><span class="line"></span><br><span class="line"># 删除容器</span><br><span class="line">docker rm  containerid</span><br></pre></td></tr></table></figure>
+<h2 id="删除没在运行容器的方法"><a href="#删除没在运行容器的方法" class="headerlink" title="删除没在运行容器的方法"></a>删除没在运行容器的方法</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"># 方法一：</span><br><span class="line"># 显示所有的容器，过滤出Exited状态的容器，取出这些容器的ID，</span><br><span class="line">docker ps -a|grep Exited|awk &apos;&#123;print $1&#125;&apos;</span><br><span class="line"># 查询所有的容器，过滤出Exited状态的容器，列出容器ID，删除这些容器</span><br><span class="line">docker rm `docker ps -a|grep Exited|awk &apos;&#123;print $1&#125;&apos;`</span><br><span class="line"></span><br><span class="line"># 方法二： </span><br><span class="line"># 删除所有未运行的容器（已经运行的删除不了，未运行的就一起被删除了）</span><br><span class="line">sudo docker rm $(sudo docker ps -a -q)</span><br><span class="line"></span><br><span class="line"># 方法三：</span><br><span class="line"># 根据容器的状态，删除Exited状态的容器</span><br><span class="line">sudo docker rm $(sudo docker ps -qf status=exited)</span><br><span class="line"> </span><br><span class="line"># 方法四：</span><br><span class="line"># Docker 1.13版本以后，可以使用 docker containers prune 命令，删除孤立的容器。</span><br><span class="line">sudo docker container prune</span><br><span class="line"> </span><br><span class="line"># 删除所有镜像</span><br><span class="line">sudo docker rmi $(docker images -q)</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -324,6 +318,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/Docker/" rel="tag"># Docker</a>
+          
+        </div>
+      
 
       
       
@@ -333,15 +333,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2019/01/25/Dockerfile文件详解/" rel="next" title="Dockerfile文件详解">
+                <i class="fa fa-chevron-left"></i> Dockerfile文件详解
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/01/25/Dockerfile文件详解/" rel="prev" title="Dockerfile文件详解">
-                Dockerfile文件详解 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -482,7 +482,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#镜像操作"><span class="nav-number">1.</span> <span class="nav-text">镜像操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#容器操作"><span class="nav-number">2.</span> <span class="nav-text">容器操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#删除没在运行容器的方法"><span class="nav-number">3.</span> <span class="nav-text">删除没在运行容器的方法</span></a></li></ol></div>
             
 
           </div>
